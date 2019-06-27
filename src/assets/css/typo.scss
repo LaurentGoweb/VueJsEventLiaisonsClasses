@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,400i,600,600i,700,800');
+@import 'colors.scss';
+@import 'utilities.scss';
+html{
+  font-size:62.5%;
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+  @include font-size(16);
+  color:$dark;
+}
+h1{
+  @include font-size(20);
+  margin:0;
+  padding:0;
+  margin-left:65px;
+  
+}
+h2{
+  @include font-size(22);
+  position: relative;
+  line-height:40px;
+  font-weight: bold;
+  color:$dark;
+}
+h3{
+  @include font-size(16);
+  font-weight:bold;
+  margin-bottom: 15px;
+}
+h4{
+  @include font-size(18);
+  font-weight:bold;
+  padding:2.4rem 0;
+  margin-bottom: 0;
+}
+p.intro{margin-left:20px;}
+a{
+  color:$dark; 
+  text-decoration: underline;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+
+.text-primary{color:$primary!important;}
+.text-secondary{color:$dark!important;}
+.text-success{color:$success!important;}
+.text-danger{color:$danger!important;}
+.text-warning{color:$warning!important;}
+.text-info{color:$info!important;}
+.text-color{color:$dark;}
+.text-white{color:$white;}
+.text-light{color:$light;}
+.bg-white{background-color:$white;}
+.bg-primary{background-color:$primary;}
+.bg-secondary{background-color:$dark;}
+.bg-success{background-color:$success;}
+.bg-danger{background-color:$danger;}
+.bg-warning{background-color:$warning;}
+.bg-info{background-color:$info;}
+.bg-light{background-color:$light;}
+.bg-dark{background-color:$dark;}
+
+@media screen and (min-width:992px){
+
+  h1{margin-left:15px;}
+
+}

@@ -1,0 +1,62 @@
+@import 'colors.scss';
+@import 'utilities.scss';
+@import 'typo.scss';
+.card{  margin-top:15px;}
+.card-toggle{
+    .card-body{
+        max-height: 0;
+        @include transition(max-height, 0.8s, ease);
+        overflow:hidden;
+        padding:0;
+        p{  padding: 1.25rem;margin:0;}
+    }
+    &.active .card-body{
+        max-height:800px;
+    }
+}
+.userWrap {
+    list-style-type: none;
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .user {
+    padding: 10px;
+    margin: 1% 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    width: 46%;
+    text-align: left;
+  }
+  h2.title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  .language {
+    display: block;
+    font-size: 0.9rem;
+  }
+  .photo{
+      width:60px;
+      height: 60px;
+      overflow: hidden;
+      margin-right:20px;
+      img{
+         height: 100%;
+         position: relative;
+         left:50%;
+         transform:translateX(-50%);
+      }
+  }
+  .filter button{
+      background-color: $light;
+      border:none;
+      padding:10px;
+      &.active{
+          background-color: $primary;
+          color:$white;
+      }
+  }
