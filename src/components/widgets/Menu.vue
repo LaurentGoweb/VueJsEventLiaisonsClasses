@@ -6,12 +6,25 @@
       <li><router-link to="/Page2">Page2</router-link></li>
 
     </ul>
-   
+    <button class="menu-toggle d-lg-none" @click="openMenuMobile()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </nav>
 </template>
-
 <script>
-
+export default {
+  data: function() {
+    return {
+    }
+  },
+  methods:{
+    openMenuMobile () {
+     this.$parent.menuMobileActive = ! this.$parent.menuMobileActive
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
